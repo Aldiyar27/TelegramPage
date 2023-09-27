@@ -1,0 +1,19 @@
+<div class="game">
+    <h1>Game</h1>
+    <div *ngIf="res === null">
+        <p class="logo">Орел или решка ?</p>
+        <select id="choice" [(ngModel)]="choice">
+            <option value="Орел">Орел</option>
+            <option value="Решка">Решка</option>
+        </select>
+        <br><br>
+        <button (click)="flipCoin()">Бросить монетку</button>
+    </div>
+
+    <div *ngIf="res !== null">
+        <p>Ваш выбор: {{ choice }}</p>
+        <p>Монета упала стороной: {{ res }}</p>
+        <p>{{ txt }}</p>
+    </div>
+
+</div>

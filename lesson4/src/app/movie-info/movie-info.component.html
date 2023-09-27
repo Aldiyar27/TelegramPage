@@ -1,0 +1,16 @@
+<div class="cont">
+    <h1>Movie Information</h1>
+    <label for="movieTitle">Enter Movie Title: </label>
+    <input type="text" id="movieTitle" [(ngModel)]="title">
+    <button (click)="searchMovie()">Search</button>
+  
+    <div *ngIf="movieInfo" class="block">
+      <h2>{{ movieInfo.Title }}</h2>
+      <p>Year: {{ movieInfo.Year }}</p>
+      <p>Rating: {{ movieInfo.Rated }}</p>
+      <p>Duration: {{ movieInfo.Runtime }}</p>
+      <p>Director: {{ movieInfo.Director }}</p>
+      <p>Actors: {{ movieInfo.Actors }}</p>
+    </div>
+</div>
+  

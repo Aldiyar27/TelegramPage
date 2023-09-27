@@ -1,0 +1,31 @@
+.cont{
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+input{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    border: solid 2px rgb(0, 51, 4);
+}
+button{
+    border: solid 2px rgb(2, 91, 10);
+    border-radius: 5px;
+}
+
+.block{
+    margin: auto;
+    font-size: 20px;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    width: 500px;
+    height: 410px;
+    background-color: rgb(1, 98, 9);
+}
